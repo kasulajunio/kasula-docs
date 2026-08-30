@@ -2,7 +2,7 @@
 
 # Product update
 
-See what's new and improved in our latest update.
+See what’s new and improved in our latest update.
 
 ### Product feature #1
 

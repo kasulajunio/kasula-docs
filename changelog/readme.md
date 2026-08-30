@@ -7,7 +7,7 @@
 
 ## Product update
 
-See what's new and improved in our latest update.
+See what’s new and improved in our latest update.
 
 <div align="left"><figure><img src="https://gitbookio.github.io/onboarding-template-images/placeholder.png" alt=""><figcaption></figcaption></figure></div>
 
@@ -52,7 +52,7 @@ See what's new and improved in our latest update.
 
 ## Product update
 
-See what's new and improved in our latest update.
+See what’s new and improved in our latest update.
 
 <div align="left"><figure><img src="https://gitbookio.github.io/onboarding-template-images/placeholder.png" alt=""><figcaption></figcaption></figure></div>
 
@@ -80,7 +80,7 @@ See what's new and improved in our latest update.
 
 ## Product update
 
-See what's new and improved in our latest update.
+See what’s new and improved in our latest update.
 
 <a href="/pages/9WeLurqtQz6OiBbAzw5N" class="button primary">Read full update</a><a href="https://gitbook.com/" class="button secondary">Documentation</a>
 
@@ -113,7 +113,7 @@ See what's new and improved in our latest update.
 
 ## Product update
 
-See what's new and improved in our latest update.
+See what’s new and improved in our latest update.
 
 <div align="left"><figure><img src="https://gitbookio.github.io/onboarding-template-images/placeholder.png" alt=""><figcaption></figcaption></figure></div>
 
