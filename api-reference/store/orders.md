@@ -7,7 +7,7 @@
 > Returns all orders placed in the store. Does not currently support filtering or pagination.\
 > \
 > {% hint style="info" %}\
-> Filtering and pagination are planned for v2. Subscribe to the \[changelog\](<https://petstore.example.com/changelog>) for updates.\
+> Filtering and pagination are planned for v2. Subscribe to the \[changelog]\(<https://petstore.example.com/changelog>) for updates.\
 > {% endhint %}<br>
 
 ```json
@@ -16,10 +16,10 @@
 
 ## Cancel an order
 
-> Cancels an order by ID. Only orders with a status of `pending` can be cancelled \u2014 orders that have already shipped cannot be reversed.
+> Cancels an order by ID. Only orders with a status of \`pending\` can be cancelled — orders that have already shipped cannot be reversed.
 
 ```json
-{"openapi":"3.0.3","info":{"title":"GitBook Petstore API","version":"1.0.0"},"tags":[{"name":"orders"}],"servers":[{"url":"https://petstore.example.com/v1","description":"Production"},{"url":"https://staging.petstore.example.com/v1","description":"Staging"}],"security":[{"bearerAuth":[]}],"components":{"securitySchemes":{"bearerAuth":{"type":"http","scheme":"bearer","description":"Pass your API key as a Bearer token in the `Authorization` header."}},"responses":{"Unauthorized":{"description":"Missing or invalid API key.","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Error"}}}},"NotFound":{"description":"The requested resource could not be found.","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Error"}}}}},"schemas":{"Error":{"type":"object","required":["code","message","status"],"properties":{"code":{"type":"string","description":"A machine-readable error code."},"message":{"type":"string","description":"A human-readable description of the error."},"status":{"type":"integer","description":"The HTTP status code."}}}}},"paths":{"/store/orders/{orderId}":{"delete":{"summary":"Cancel an order","description":"Cancels an order by ID. Only orders with a status of `pending` can be cancelled \u2014 orders that have already shipped cannot be reversed.","tags":["orders"],"operationId":"cancelOrder","parameters":[{"name":"orderId","in":"path","required":true,"description":"The ID of the order to cancel.","schema":{"type":"integer","format":"int64"}}],"responses":{"204":{"description":"Order cancelled successfully."},"401":{"$ref":"#/components/responses/Unauthorized"},"404":{"$ref":"#/components/responses/NotFound"},"409":{"description":"Order cannot be cancelled \u2014 it has already shipped."}}}}}}
+{"openapi":"3.0.3","info":{"title":"GitBook Petstore API","version":"1.0.0"},"tags":[{"name":"orders"}],"servers":[{"url":"https://petstore.example.com/v1","description":"Production"},{"url":"https://staging.petstore.example.com/v1","description":"Staging"}],"security":[{"bearerAuth":[]}],"components":{"securitySchemes":{"bearerAuth":{"type":"http","scheme":"bearer","description":"Pass your API key as a Bearer token in the `Authorization` header."}},"responses":{"Unauthorized":{"description":"Missing or invalid API key.","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Error"}}}},"NotFound":{"description":"The requested resource could not be found.","content":{"application/json":{"schema":{"$ref":"#/components/schemas/Error"}}}}},"schemas":{"Error":{"type":"object","required":["code","message","status"],"properties":{"code":{"type":"string","description":"A machine-readable error code."},"message":{"type":"string","description":"A human-readable description of the error."},"status":{"type":"integer","description":"The HTTP status code."}}}}},"paths":{"/store/orders/{orderId}":{"delete":{"summary":"Cancel an order","description":"Cancels an order by ID. Only orders with a status of `pending` can be cancelled — orders that have already shipped cannot be reversed.","tags":["orders"],"operationId":"cancelOrder","parameters":[{"name":"orderId","in":"path","required":true,"description":"The ID of the order to cancel.","schema":{"type":"integer","format":"int64"}}],"responses":{"204":{"description":"Order cancelled successfully."},"401":{"$ref":"#/components/responses/Unauthorized"},"404":{"$ref":"#/components/responses/NotFound"},"409":{"description":"Order cannot be cancelled — it has already shipped."}}}}}}
 ```
 
 
